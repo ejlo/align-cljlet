@@ -291,7 +291,7 @@ positioned on the defroute form."
     (let ((width (acl-calc-ns-width)))
       (acl-respace-multi-widths-form (list width)))))
 
-(defun acl-get-forward-steps [m]
+(defun acl-get-forward-steps (m)
   (cond
    ((string= m "cond") 2)
    ((or (string= m "assoc") (string= m "case")) 3)
